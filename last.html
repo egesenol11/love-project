@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Son Sayfa 💖</title>
+    <style>
+        body {
+            background-color: black;
+            color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        img {
+            width: 300px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+        .days {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ben de seni seviyorum Kıvırcığımm! 💕</h1>
+    <img src="static/img/hugging_cats.png" alt="Sarılan Kediler">
+    <div class="days" id="daysPassed"></div>
+
+    <script>
+        const startDate = new Date("2024-10-31");
+        const today = new Date();
+        const diffTime = today - startDate;
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        document.getElementById("daysPassed").innerText =
+            `Hayatımız güzelleştiğinden beri ${diffDays} gün geçti.`;
+    </script>
+</body>
+</html>
