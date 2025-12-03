@@ -25,19 +25,6 @@
             font-size: 22px;
             margin-top: 20px;
         }
-        .controls {
-            margin-top: 20px;
-        }
-        button {
-            margin: 5px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            background-color: pink;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-        }
         iframe {
             margin-top: 20px;
             max-width: 500px;
@@ -55,13 +42,6 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
     </iframe>
-
-    <!-- Senin mp3 dosyan -->
-    <audio id="mySong" src="static/audio/bir_ruya_gordum.mp3"></audio>
-    <div class="controls">
-        <button onclick="document.getElementById('mySong').play()">Başlat 🎵</button>
-        <button onclick="document.getElementById('mySong').pause()">Durdur ⏸️</button>
-    </div>
 
     <div class="days" id="daysPassed"></div>
 
