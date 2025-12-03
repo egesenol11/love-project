@@ -9,14 +9,21 @@
             color: pink;
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px 10px; /* mobilde daha dar padding */
         }
         img {
-            margin-top: 50px;
-            width: 300px;
+            margin-top: 30px;
+            width: 100%; /* mobilde tam genişlik */
+            max-width: 300px; /* büyük ekranda sınırlı */
             border-radius: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         h1 {
             margin-top: 20px;
+            font-size: 7vw; /* ekran genişliğine göre ayarlanır */
         }
         .buttons {
             margin-top: 30px;
@@ -25,12 +32,13 @@
             background-color: pink;
             color: black;
             border: none;
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 4vw 8vw; /* mobilde orantılı padding */
+            font-size: 5vw;   /* mobilde orantılı yazı boyutu */
             margin: 10px;
             cursor: pointer;
             border-radius: 10px;
             transition: all 0.3s ease;
+            max-width: 80%; /* taşmayı engeller */
         }
     </style>
 </head>
@@ -45,7 +53,7 @@
     <script>
         let yesBtn = document.getElementById("yesBtn");
         let noBtn = document.getElementById("noBtn");
-        let growFactor = 1.7;
+        let growFactor = 1.3; // mobilde daha kontrollü büyüme
 
         noBtn.addEventListener("click", () => {
             let currentWidth = yesBtn.offsetWidth;
